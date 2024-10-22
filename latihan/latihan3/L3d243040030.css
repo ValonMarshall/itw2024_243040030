@@ -1,0 +1,62 @@
+body {
+    background-color:rgb(255, 255, 255);
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    font-family:Georgia; 
+
+}
+
+    .a1 {
+         color: red;
+         text-align: center;
+        }
+        .a1:hover {
+            text-decoration: none;
+           }
+
+    .a2 {
+        text-decoration: none;
+        font-weight: bold;
+    }
+         .a2:hover {
+                    background-color: blue;
+                    color: white;
+                    text-decoration: none;
+
+                   }
+
+
+h1 {
+    color: darkblue; 
+    font-family: comic sans ms;
+    font-size: 60px;
+    text-align: center;
+    
+   }
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-style: italic;
+}
+
+
+p {
+    text-align: justify;
+}
+
+    .p1 {
+         text-align: center;
+         line-height: 1.3;
+         color: orange;
+    }
+
+    .p2 {
+        text-align: right;
+        line-height: 2;
+    }
+
