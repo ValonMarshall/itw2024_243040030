@@ -10,6 +10,7 @@ body {
     .a1 {
          color: red;
          text-align: center;
+         font-variant: small-caps;
         }
         .a1:hover {
             text-decoration: none;
