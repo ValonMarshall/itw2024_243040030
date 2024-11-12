@@ -29,13 +29,10 @@
 /* Animation */
 @keyframes AnimasiBackground {
     from {
-        height: 624px;
-        width: 1240px;
     }
 
     to {
-        height: 624px;
-        width: 1500px;
+        
     }
 }
 
@@ -119,15 +116,14 @@
 
 /* Style */
 body {
-    font:  16px/28px arial, sans-serif;
-    background-color: #000000;
-    background-image: url(../T5b/img/backgrounds/RhodesIsland.jpg);
+    background-color: #3f3f3f;
     color: #333;
+    bottom: 10px;
     
     
 }
 
-.container {
+.first-page {
     background-image: url(img/backgrounds/Background.png);
     height: 650px;
     margin: auto;
@@ -438,112 +434,7 @@ body {
                     
 
 
-.Ops-Page {
-    background-image: url(../T5b/img/backgrounds/Landship.png);
-    border: 1px solid rgb(255, 255, 255);
-    height: 600px;
-    position: absolute;
-    top: 1300px;
-    left: 0;
-    right: 0;
-    z-index: -999;
-}
 
-    .portrait {
-        z-index: -99;
-        display: inline;
-        background-image: url(img/backgrounds/RhodesIsland2.jpg);
-        border: 8px solid rgb(86, 86, 86);
-        margin-top: 50px;
-        position: absolute;
-        left: 300px;
-        width: 700px;
-        height: 500px;
-        
-    }
-
-        .portrait .Operator {
-            margin-top: 80px;
-            transform: scale(0.42);
-            position: absolute;
-            top: -315px;
-            left: -360px;
-            z-index: 1;
-        }
-
-        .portrait .top-bar {
-            display: inline;
-            background-color: rgb(86, 86, 86);
-            position: absolute;
-            left: 0;
-            width: 300px;
-            height: 50px;
-        }
-
-            .portrait .top-bar p {
-                color: #ffffff;
-                text-align: center;
-                font: 40px/36px 'BebasNeue';
-                margin: auto;
-                line-height: 50px;
-            }
-
-               .portrait .top-bar .squad {
-                    position: absolute;
-                    top: 20px;
-                    left: -25px;
-                    transform: scale(0.7);
-               }
-        
-        .portrait .class-bar {
-            display: inline;
-            position: absolute;
-            top: 100px;
-            left: 200px;
-            background-color: rgb(255, 255, 255);
-            width: 300px;
-            height: 70px;
-        }
-
-            .portrait .class-bar .op-class {
-                position: absolute;
-                right: 0;
-                top: -6px;
-                transform: scale(.7);
-            }
-                .portrait .class-bar .name {
-                    position: absolute;
-                    bottom: -35px;
-                    left: 65px;
-                    color: #000000;
-                    text-align: center;
-                    font: 50px/36px 'BebasNeue';
-                    margin: auto;
-                }
-
-        .portrait .description-bar {
-            z-index: -1;
-            display: inline;
-            position: absolute;
-            top: 125px;
-            left: 250px;
-            background-color: rgb(48, 48, 48);
-            opacity: .9;
-            border: 2px solid rgb(0, 0, 0);
-            width: 400px;
-            height: 300px;
-            overflow: auto;
-        }
-
-            .portrait .description-bar .op-description {
-                margin-top: 50px;
-                margin-right: 25px;
-                margin-left: 25px;
-                text-align: justify;
-                color: #eaeaea;
-                font-family: 'NotoSans';
-                font-size: 15px;
-            }
 
 
 
@@ -569,7 +460,7 @@ body {
     transition: .8s;
 }
 
-        .close {
+        .Ops-list-overlay .close {
             position: absolute;
             font: 40px/40px 'NotoSans';
             top: 0;
@@ -584,11 +475,11 @@ body {
             padding-right: 10px;
             padding-left: 10px;
     }
-        .close:hover {
+        .Ops-list-overlay .close:hover {
             background-color: #3f3f43;
         }
 
-        .close:active {
+        .Ops-list-overlay .close:active {
             background-color: #12276b;
         }
     
@@ -599,7 +490,7 @@ body {
                             position: fixed;
                             background-color: rgba(0,0,0,.7);
                             opacity: 1;
-                            z-index: 99;
+                            z-index: 10;
                             animation: front 2s ease;
                         }
 
@@ -746,3 +637,163 @@ body {
 
 
 
+.Ops-Page {
+height: 600px;
+position: absolute;
+top: 0px;
+left: 0;
+right: 0;
+z-index: -999;
+opacity: 0;
+transition: .8s;
+}
+
+     .Ops-Page .close {
+        position: absolute;
+        font: 40px/40px 'NotoSans';
+        top: 0;
+        right: 0;
+        color: white;
+        text-decoration: none;
+        border: 1px solid #696969;
+        background-color: #696969;
+        line-height: 14px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .Ops-Page .close:hover {
+        background-color: #3f3f43;
+    }
+
+    .Ops-Page.close:active {
+        background-color: #12276b;
+    }   
+
+     .Ops-Page .back {
+        position: absolute;
+        font: 40px/40px 'NotoSans';
+        top: 0;
+        right: 44px;
+        color: white;
+        text-decoration: none;
+        background-color: #696969;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .Ops-Page .back:hover {
+        background-color: #3f3f43;
+    }
+
+    .Ops-Page.back:active {
+        background-color: #12276b;
+    }   
+
+            /* list target */
+            .Ops-Page:target {
+                position: fixed;
+                background-color: rgba(0,0,0,.7);
+                opacity: 1;
+                z-index: 20;
+                animation: front 2s ease;
+            }
+
+
+
+
+.portrait {
+z-index: -99;
+display: inline;
+background-image: url(img/backgrounds/RhodesIsland2.jpg);
+border: 8px solid rgb(86, 86, 86);
+margin-top: 50px;
+position: absolute;
+left: 300px;
+width: 700px;
+height: 500px;
+
+}
+
+.portrait .Operator {
+margin-top: 80px;
+transform: scale(0.42);
+position: absolute;
+top: -315px;
+left: -360px;
+z-index: 1;
+}
+
+.portrait .top-bar {
+display: inline;
+background-color: rgb(86, 86, 86);
+position: absolute;
+left: 0;
+width: 300px;
+height: 50px;
+}
+
+.portrait .top-bar p {
+    color: #ffffff;
+    text-align: center;
+    font: 40px/36px 'BebasNeue';
+    margin: auto;
+    line-height: 50px;
+}
+
+    .portrait .top-bar .squad {
+        position: absolute;
+        top: 20px;
+        left: -25px;
+        transform: scale(0.7);
+    }
+
+.portrait .class-bar {
+display: inline;
+position: absolute;
+top: 100px;
+left: 200px;
+background-color: rgb(255, 255, 255);
+width: 300px;
+height: 70px;
+}
+
+.portrait .class-bar .op-class {
+    position: absolute;
+    right: 0;
+    top: -6px;
+    transform: scale(.7);
+}
+    .portrait .class-bar .name {
+        position: absolute;
+        bottom: -35px;
+        left: 65px;
+        color: #000000;
+        text-align: center;
+        font: 50px/36px 'BebasNeue';
+        margin: auto;
+    }
+
+.portrait .description-bar {
+z-index: -1;
+display: inline;
+position: absolute;
+top: 125px;
+left: 250px;
+background-color: rgb(48, 48, 48);
+opacity: .9;
+border: 2px solid rgb(0, 0, 0);
+width: 400px;
+height: 300px;
+overflow: auto;
+}
+
+.portrait .description-bar .op-description {
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: justify;
+    color: #eaeaea;
+    font-family: 'NotoSans';
+    font-size: 15px;
+}
