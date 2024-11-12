@@ -132,6 +132,7 @@ body {
     height: 650px;
     margin: auto;
     border: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -193,13 +194,12 @@ body {
         }
 
         .kolomkiri img:active {
-            background-color: #ba1a1a;
+            background-color: #12276b;
             transition: .1s;
         }
 
     .kolomkanan {
         display: inline;
-
         position: absolute;
         right: 0;
         width: 200px;
@@ -233,7 +233,7 @@ body {
         }
 
         .kolomkanan img:active {
-            background-color: #ba1a1a;
+            background-color: #12276b;
             transition: .1s;
         }
 
@@ -546,42 +546,89 @@ body {
             }
 
 
+
+
+
+
+
+
+
+
+
 .Ops-list-overlay {
-    background-image: url(../T5b/img/backgrounds/Landship.png);
+    background-color: rgba(0,0,0,0);
     border: 1px solid rgb(255, 255, 255);
-    height: 600px;
+    height: 1500px;
     position: absolute;
-    top: 2000px;
+    top: 0px;
     left: 0;
+    bottom: 0;
     right: 0;
-    z-index: -999;
+    opacity: 0;
+    z-index: -99;
+    transition: .8s;
 }
 
+        .close {
+            position: absolute;
+            font: 40px/40px 'NotoSans';
+            top: 0;
+            right: 0;
+            color: white;
+            text-decoration: none;
+            border: 1px solid #696969;
+            background-color: #696969;
+            line-height: 14px;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
+    }
+        .close:hover {
+            background-color: #3f3f43;
+        }
+
+        .close:active {
+            background-color: #12276b;
+        }
+    
+
+
+                        /* list target */
+                        .Ops-list-overlay:target {
+                            position: fixed;
+                            background-color: rgba(0,0,0,.7);
+                            opacity: 1;
+                            z-index: 99;
+                            animation: front 2s ease;
+                        }
+
+
     .list-container {
-        z-index: -99;
         display: inline;
         background-image: url(img/backgrounds/Rhodescorridor.png);
         border: 6px solid rgb(91, 91, 91);
-        margin-top: 50px;
+        margin-top: 25px;
         position: absolute;
         left: 250px;
         right: 250px;
         height: 490px;
     }
 
-    .list-container .back-logo {
-        zoom: 55%;
-        margin: auto;
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        top: 0px;
-        bottom: 0px;
-        opacity: .5;
-    }
+        .list-container .back-logo {
+            zoom: 55%;
+            margin: auto;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            opacity: .5;
+        }
 
         .list-top-bar {
             display: inline;
+            border: 3px solid #696969;
             background-color: #696969;
             position: absolute;
             left: 0;
@@ -595,7 +642,7 @@ body {
                 margin: auto;
                 padding-left: 30px;
                 padding-right: 90px;
-                line-height: 70px;
+                line-height: 60px;
             }
 
             .list-top-bar .squad-logo {
@@ -618,7 +665,7 @@ body {
                 list-style: none;
                 overflow: hidden;
                 display: inline;;
-                background-image: url(img/backgrounds/Rhodesdeck.png);
+                background-image: url(img/backgrounds/Rhodesdeck.png );
                 border: 2px solid #ffffff;
                 margin-top: 15px;
                 margin-left: 28px;
@@ -694,3 +741,8 @@ body {
                         margin-top: 0px;
                     }
                 }
+
+
+
+
+
