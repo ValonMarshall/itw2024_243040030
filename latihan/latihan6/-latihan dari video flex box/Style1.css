@@ -1,0 +1,271 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    list-style: 1.65;
+    padding-bottom: 1000px;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    background-color: #1946da;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    color: #c2cffa;
+    z-index: 1;
+}
+
+    nav .logo-navbar {
+        font-family: 'NotoSans';
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        width: 40%;
+        justify-content: space-between;
+    }
+    
+        nav ul li a {
+            color: #b0c2fd;;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+
+            nav ul li a:hover {
+                color: #f1f5ff;;
+            }
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #b0c2fd;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-2px, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+/* Responsive Brealkpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1946da;
+        z-index: 0;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+}
+
+/* Latihan 1 */
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    z-index: -2;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex: 2;
+    order: 3;
+}
+
+
+/* Latihan 2 */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+    .layanan .satu { background-color: rgb(132, 132, 255);}
+
+    .layanan .dua { background-color: rgb(125, 249, 125);}
+
+    .layanan .tiga { background-color: rgb(251, 135, 135);}
+
+/* Latihan 3 */
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+
+/* Latihan 4 */
+.container-empat {
+    width: 800px;
+    margin: 50px;
+    display: flex;
+}
+
+.card {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header {
+    height: 150px;
+    background-color: #666;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card .besar {
+    transform: scale(1.12);
+}
+                /* beri responsive sendiri */
+
+
+
+/* Latihan 5 */
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+
+
+/* Responsive */
+@media( min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
