@@ -286,6 +286,7 @@ body {
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    
 }
 
     .service .icon {
@@ -314,52 +315,27 @@ body {
                 color: rgb(254, 242, 107);
                 
             }
+    
+    .service img {
+        width: 60px;
+    }
 
-/* .contact {
+    .service .logo {
         display: grid;
         grid-template-areas: 
-            'Whatsapp Facebook Instagram';
-        width: 50%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color:rgb(254, 156, 107);
-        border-radius: 20px;
-        
+            'logo nama'  ;
+        align-items: center;
+        margin-bottom: 15px;
     }
-    
-        .contact h2 {
-            text-align: center;
-            font-family: 'Mandala';
-            font-size: 60px;;
-        }
-    
-        .contact p {
-            text-align: center;
-            margin-top: 10px;
-            margin-right: 30px;
-            margin-left: 30px;
-            margin-bottom: 30px;
-            font-family: 'Poetsen';
-            font-size: 20px;
+
+        .service .logo img {
+            grid-area: logo;
         }
 
-            .contact .whatsapp {
-                grid-area: Whatsapp;
-            }
-
-            .contact .facebook {
-                grid-area: Facebook;
-            }
-
-            .contact .instagram {
-                grid-area: Instagram;
-            } */
-
-
-
-
-
-
+        .service .logo span {
+            grid-area: nama;
+            text-align: center;
+        }
 
 
 /* Gallery */
@@ -380,7 +356,12 @@ body {
 
     .gallery img {
         border-radius: 10px;
+        transition: .3s;
     }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
 
 
 /* Responsive Breakpoints */
