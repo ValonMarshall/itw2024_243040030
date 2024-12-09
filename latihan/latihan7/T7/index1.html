@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ei's Simple Art</title>
+
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div class="navigation">
+
+        <nav class="menu">
+
+            <div class="brand">
+                <h1>Ei's Simple Art</h1>
+            </div>
+
+            <ul class="menu-list">
+                <li><a  href="">Home</a></li>
+                <li><a  href="https://shopee.co.id/peripernakpernik">Products</a></li>
+                <li><a  href="#About">About</a></li>
+                <li><a  href="#gallery">Gallery</a></li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        
+        </nav>
+
+
+    </div>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="hero"></div>
+
+            <div class="features feature-1">
+                <h4 class="price">IDR 250k</h4>
+                <p class="item">Tas dan Sepatu</p>
+            </div>
+
+            <div class="features feature-2">
+                <h4 class="price">IDR 150k</h4>
+                <p class="item">Baju</p>
+            </div>
+
+            <div class="features feature-3">
+                <h4 class="price">IDR 75k</h4>
+                <p class="item">Boneka</p>
+            </div>
+
+            <div class="features feature-4">
+                <h4 class="price">IDR 10k</h4>
+                <p class="item">Gantungan Kunci</p>
+            </div>
+
+        </header>
+
+
+        <div class="About">
+            <h2 id="About">~ Ei's Simple Art ~</h2>
+            <p>
+                Ei's Simple Art, ialah sebuah usaha brand rajutan yang dirintis sendiri oleh Lely Dwi Indriyani, dengan mimpinya suatu saat bisa mengembangkan usaha dan memiliki galeri untuk memajang produk-produk dari Ei’S Simple Art serta memiliki komunitas yang produktif dan semakin banyak kaum hawa yang ikut bergabung di komunitasnya.
+            </p>
+        </div>
+        
+
+       
+
+        <section class="services">
+            
+            <div class="service">
+                <div class="icon">💻</div>
+                <h3>Toko Fisik</h3>
+                <p>
+                    Bagi yang mau melihat barang atau beli langsung di tempat, bisa datang langsung ke lokasi dengan alamat :
+                </p>
+                <p>
+                    <a href="https://www.google.com/maps/place/6%C2%B057'05.1%22S+108%C2%B035'00.7%22E/@-6.9514013,108.5650598,2610m/data=!3m1!1e3!4m7!1m2!2m1!1sDusun+Cimuda+No.12,+RT.1%2FRW.4,+Desa+Mekarjaya,+Kec.+Ciawigebang,+Kab.+Kuningan,+Jawa+Barat,+ID+45591!3m3!8m2!3d-6.951423!4d108.583514?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"> Dusun Cimuda No.12, RT.1/RW.4, Desa Mekarjaya, Kec. Ciawigebang, Kab. Kuningan, Jawa Barat.</a> 
+                </p>
+            </div>
+
+            
+            <div class="service">
+                <div class="icon">🎙️</div>
+                <h3>Toko Online</h3>
+                <p>
+                    Ei's Simple Art juga memiliki toko online, yakni Shopee dengan nama yang sama,
+                </p>
+                <p>
+                    <a href="https://shopee.co.id/peripernakpernik">Ei's Simple Art</a>
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🎓</div>
+                <h3>Kelas Merajut</h3>
+                <p>
+                    Bagi siapa saja yang ingin belajar merajut, bisa langsung datang ke rumah tanpa dipungut biaya, cukup membawa alat-alat dan bahan untuk merajut masing masing.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- <section class="contact">
+            <h2>Contact</h2>
+    
+            <p class="whatsapp">
+                <img src="img/logo/Whatsapp.png">
+                Whatsapp
+            </p>
+    
+            <p class="facebook">
+                <img src="img/logo/Facebook.png">
+                Facebook
+            </p>
+    
+            <p class="instagram">
+                <img src="img/logo/Instagram.png">
+                Instagram
+            </p>
+        </section> -->
+
+
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <img src="img/gallery/1.png" alt="" />
+            <img src="img/gallery/2.png" alt="" />
+            <img src="img/gallery/3.png" alt="" />
+            <img src="img/gallery/4.png" alt="" />
+            <img src="img/gallery/5.png" alt="" />
+            <img src="img/gallery/6.png" alt="" />
+            <img src="img/gallery/7.png" alt="" />
+            <img src="img/gallery/8.png" alt="" />
+            <img src="img/gallery/9.png" alt="" />
+            <img src="img/gallery/10.png" alt="" />
+
+        </section>
+
+
+
+    </div>
+
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input')
+        const nav = document.querySelector('nav ul')
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('slide');
+        });
+    </script>
+
+
+
+    
+</body>
+</html>
